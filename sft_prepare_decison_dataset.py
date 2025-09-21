@@ -15,7 +15,12 @@ import json
   "output": "Decision: [decision]. Reasoning: [reasoning]"
 }
 
-
+FINAL FORMAT EXAMPLE:
+{
+  "instruction": "Scenario: You must decide whether to fire an underperforming team member who usually contributes well. Context: The mistake was serious but not malicious. The person has a history of strong performance. Tags: leadership, ethics, team management Make a decision and explain your reasoning.",
+  "output": "Decision: I would prioritize coaching over immediate termination. Reasoning: People deserve a chance to grow from setbacks. I would first understand the circumstances, discuss the mistake openly, and assess willingness to improve. This approach maintains fairness, trust, and long-term team strength.",
+  "tags": ["leadership", "ethics", "team management"]
+}
 
 """
 # Input file: your starter or expanded decision dataset
