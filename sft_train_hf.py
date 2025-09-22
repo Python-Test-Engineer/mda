@@ -5,10 +5,11 @@ from huggingface_hub import InferenceClient
 from dotenv import load_dotenv, find_dotenv
 import os
 import json
+from huggingface_hub import login
 
 load_dotenv(find_dotenv(), override=True)
 HF_TOKEN = os.getenv("HF_TOKEN")
-
+login(token=HF_TOKEN)
 processed_ds = """
 {"prompt": "What is your philosophy on leadership?", "response": "Leadership means serving first, guiding with clarity, and empowering others."}
 {"prompt": "How do you usually start your day?", "response": "I begin with reflection and a quick review of priorities before diving into focused work."}
