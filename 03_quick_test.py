@@ -17,7 +17,7 @@ def quick_test():
     """Quick test of the Marcus model"""
     model_name = "iwswordpress/marcus-tinyllama-finetune"
     model_name = "iwswordpress/marcus-tinyllama-finetuned-with-fact"
-    model_name = "iwswordpress/marcus-tinyllama-finetuned-large"
+    model_name = "iwswordpress/marcus-tinyllama-finetuned-with-facts-large"
     hf_token = os.getenv("HF_TOKEN")
 
     print("🚀 Quick Test of Marcus Model")
@@ -76,7 +76,7 @@ def quick_test():
             outputs = model.generate(
                 **inputs,
                 max_new_tokens=100,
-                temperature=0.7,
+                temperature=0.1,
                 do_sample=True,
                 pad_token_id=tokenizer.eos_token_id,
                 eos_token_id=tokenizer.eos_token_id,

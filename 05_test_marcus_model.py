@@ -12,7 +12,10 @@ import os
 # Load environment variables
 load_dotenv()
 
+MODEL = "iwswordpress/marcus-tinyllama-finetuned-with-facts-large"
 MODEL = "iwswordpress/marcus-tinyllama-finetuned-with-fact"
+
+
 class MarcusModelTester:
 
     def __init__(self, model_name=MODEL):
@@ -112,14 +115,26 @@ class MarcusModelTester:
         print("=" * 60)
 
         example_questions = [
-            "What is your philosophy on leadership?",
-            "How do you handle difficult situations?",
-            "What advice would you give to someone starting their career?",
-            "How do you stay motivated during challenging times?",
-            "What's your approach to building trust in a team?",
-            "How do you balance work and personal life?",
-            "What role does empathy play in leadership?",
-            "How do you encourage innovation in your team?",
+            "How do you build resilience?",
+            "What is your favorite way to recharge?",
+            "What is your favorite way to celebrate team achievements?",
+            "When is your birthday?",
+            "What year were you born?",
+            "What was your school?",
+            "Who was your house master",
+            "What was the name of your house at Mill Hill School?",
+            "What sports do you like to play and whcih sport do you not like?",
+            "What is your favorite food?",
+            "What is your favorite movie?",
+            "What is your favorite hobby?",
+            "What is your favorite travel destination?",
+            "What languages do you speak?",
+            "What is your favorite quote?",
+            "What is your favorite music genre?",
+            "What is your favorite way to relax?",
+            "What is your favorite season?",
+            "What is your favorite animal?",
+            "What is your favorite color?",
         ]
 
         for i, question in enumerate(example_questions, 1):
