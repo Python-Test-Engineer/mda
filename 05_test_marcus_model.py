@@ -12,10 +12,10 @@ import os
 # Load environment variables
 load_dotenv()
 
-
+MODEL = "iwswordpress/marcus-tinyllama-finetuned-with-fact"
 class MarcusModelTester:
 
-    def __init__(self, model_name="iwswordpress/marcus-tinyllama-finetuned-with-fact"):
+    def __init__(self, model_name=MODEL):
         self.model_name = model_name
         self.hf_token = os.getenv("HF_TOKEN")
 
