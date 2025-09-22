@@ -42,13 +42,24 @@ def quick_test():
     test_questions = [
         "How do you build resilience?",
         "What is your favorite way to recharge?",
-        "How do you foster creativity in your work?",
         "What is your favorite way to celebrate team achievements?",
         "When is your birthday?",
         "What year were you born?",
         "What was your school?",
         "Who was your house master",
         "What was the name of your house at Mill Hill School?",
+        "What sports do you like to play and whcih sport do you not like?",
+        "What is your favorite food?",
+        "What is your favorite movie?",
+        "What is your favorite hobby?",
+        "What is your favorite travel destination?",
+        "What languages do you speak?",
+        "What is your favorite quote?",
+        "What is your favorite music genre?",
+        "What is your favorite way to relax?",
+        "What is your favorite season?",
+        "What is your favorite animal?",
+        "What is your favorite color?",
     ]
     output = ""
     for i, question in enumerate(test_questions, 1):
@@ -91,6 +102,7 @@ def quick_test():
 
 if __name__ == "__main__":
     try:
+        print("Starting quick test...")
         quick_test()
     except Exception as e:
         print(f"❌ Error: {e}")
