@@ -16,6 +16,7 @@ load_dotenv()
 def quick_test():
     """Quick test of the Marcus model"""
     model_name = "iwswordpress/marcus-tinyllama-finetune"
+    model_name = "iwswordpress/marcus-tinyllama-finetuned-with-fact"
     hf_token = os.getenv("HF_TOKEN")
 
     print("🚀 Quick Test of Marcus Model")
@@ -41,9 +42,12 @@ def quick_test():
         "How do you build resilience?",
         "What is your favorite way to recharge?",
         "How do you foster creativity in your work?",
-        "What is your approach to time management?",
-        "How do you stay adaptable in a rapidly changing environment?",
         "What is your favorite way to celebrate team achievements?",
+        "When is your birthday?",
+        "What year were you born?",
+        "What was your school?",
+        "Who was your house master",
+        "What was the name of your house at Mill Hill School?",
     ]
     output = ""
     for i, question in enumerate(test_questions, 1):

@@ -14,7 +14,7 @@ load_dotenv()
 
 
 class MarcusModelTester:
-    def __init__(self, model_name="iwswordpress/marcus-tinyllama-finetune"):
+    def __init__(self, model_name="iwswordpress/marcus-tinyllama-finetune-with-fact"):
         self.model_name = model_name
         self.hf_token = os.getenv("HF_TOKEN")
 

@@ -15,7 +15,7 @@ load_dotenv()
 
 def quick_test():
     """Quick test of the Marcus model"""
-    model_name = "iwswordpress/marcus-tinyllama-finetune"
+    model_name = "iwswordpress/marcus-tinyllama-finetune-with-fact"
     hf_token = os.getenv("HF_TOKEN")
 
     print("🚀 Quick Test of Marcus Model")

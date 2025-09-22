@@ -1,7 +1,7 @@
 from datasets import load_dataset
 
 # 1. Load your mixed dataset (instruction + chat style)
-dataset = load_dataset("json", data_files="marcus_dataset.jsonl")["train"]
+dataset = load_dataset("csv", data_files="./data/bio")["train"]
 
 
 # 2. Convert everything into prompt → response format
