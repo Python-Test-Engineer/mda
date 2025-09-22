@@ -1,0 +1,240 @@
+#!/usr/bin/env python3
+"""
+Simple Fine-tuning Script for Open Source LLM
+Uses TinyLlama-1.1B (smallest suitable model) with LoRA for efficient training
+"""
+
+import os
+import json
+import torch
+from datasets import Dataset
+from transformers import (
+    AutoTokenizer,
+    AutoModelForCausalLM,
+    TrainingArguments,
+    Trainer,
+    DataCollatorForLanguageModeling,
+)
+from peft import LoraConfig, get_peft_model, TaskType
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
+
+
+class SimpleFineTuner:
+    def __init__(self, model_name="TinyLlama/TinyLlama-1.1B-Chat-v1.0"):
+        self.model_name = model_name
+        self.hf_token = os.getenv("HF_TOKEN")
+        self.hf_org = "iwswordpress"
+
+        # Initialize tokenizer and model
+        print(f"Loading model: {self.model_name}")
+        self.tokenizer = AutoTokenizer.from_pretrained(
+            self.model_name, token=self.hf_token, trust_remote_code=True
+        )
+
+        # Add pad token if it doesn't exist
+        if self.tokenizer.pad_token is None:
+            self.tokenizer.pad_token = self.tokenizer.eos_token
+
+        self.model = AutoModelForCausalLM.from_pretrained(
+            self.model_name,
+            token=self.hf_token,
+            dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+            device_map="auto" if torch.cuda.is_available() else None,
+            trust_remote_code=True,
+        )
+
+        # Configure LoRA for efficient fine-tuning
+        lora_config = LoraConfig(
+            task_type=TaskType.CAUSAL_LM,
+            inference_mode=False,
+            r=8,  # Low rank
+            lora_alpha=32,
+            lora_dropout=0.1,
+            target_modules=["q_proj", "v_proj", "k_proj", "o_proj"],
+        )
+
+        self.model = get_peft_model(self.model, lora_config)
+        print(
+            f"Model loaded with LoRA. Trainable parameters: {self.model.num_parameters()}"
+        )
+
+    def load_jsonl_data(self, file_path):
+        """Load and process JSONL training data"""
+        data = []
+        with open(file_path, "r", encoding="utf-8") as f:
+            for line in f:
+                item = json.loads(line.strip())
+                # Format as chat template
+                formatted_text = f"<|user|>\n{item['prompt']}<|end|>\n<|assistant|>\n{item['response']}<|end|>"
+                data.append({"text": formatted_text})
+
+        print(f"Loaded {len(data)} training examples")
+        return Dataset.from_list(data)
+
+    def tokenize_function(self, examples):
+        """Tokenize the dataset"""
+        tokenized = self.tokenizer(
+            examples["text"],
+            truncation=True,
+            padding="max_length",
+            max_length=512,  # Keep it small for efficiency
+            return_overflowing_tokens=False,
+        )
+        tokenized["labels"] = tokenized["input_ids"].copy()
+        return tokenized
+
+    def train(
+        self,
+        jsonl_file="sft_marcus_lite.jsonl",
+        output_dir="./marcus-tinyllama-finetuned",
+    ):
+        """Fine-tune the model"""
+
+        # Load and prepare dataset
+        dataset = self.load_jsonl_data(jsonl_file)
+        tokenized_dataset = dataset.map(
+            self.tokenize_function, batched=True, remove_columns=dataset.column_names
+        )
+
+        # Split dataset (80% train, 20% eval)
+        train_test_split = tokenized_dataset.train_test_split(test_size=0.2, seed=42)
+        train_dataset = train_test_split["train"]
+        eval_dataset = train_test_split["test"]
+
+        # Training arguments - optimized for small model and quick training
+        training_args = TrainingArguments(
+            output_dir=output_dir,
+            overwrite_output_dir=True,
+            num_train_epochs=1,
+            per_device_train_batch_size=2,
+            per_device_eval_batch_size=2,
+            gradient_accumulation_steps=4,
+            warmup_steps=100,
+            max_steps=100,  # Keep training short
+            learning_rate=2e-4,
+            fp16=torch.cuda.is_available(),
+            logging_steps=50,
+            eval_steps=50,
+            save_steps=100,  # Must be multiple of eval_steps
+            eval_strategy="steps",
+            save_strategy="steps",
+            load_best_model_at_end=True,
+            metric_for_best_model="eval_loss",
+            greater_is_better=False,
+            report_to=None,  # Disable wandb/tensorboard
+            remove_unused_columns=False,
+        )
+
+        # Initialize trainer without data collator (let it use default)
+        trainer = Trainer(
+            model=self.model,
+            args=training_args,
+            train_dataset=train_dataset,
+            eval_dataset=eval_dataset,
+        )
+
+        # Start training
+        print("Starting training...")
+        trainer.train()
+
+        # Save the model
+        trainer.save_model()
+        self.tokenizer.save_pretrained(output_dir)
+
+        print(f"Training completed! Model saved to {output_dir}")
+        return output_dir
+
+    def test_model(
+        self, model_path, test_prompt="What is your philosophy on leadership?"
+    ):
+        """Test the fine-tuned model"""
+        print(f"\nTesting model with prompt: '{test_prompt}'")
+
+        # Load the fine-tuned model
+        model = AutoModelForCausalLM.from_pretrained(
+            model_path,
+            torch_dtype=torch.float16 if torch.cuda.is_available() else torch.float32,
+            device_map="auto" if torch.cuda.is_available() else None,
+        )
+        tokenizer = AutoTokenizer.from_pretrained(model_path)
+
+        # Format input
+        formatted_input = f"<|user|>\n{test_prompt}<|end|>\n<|assistant|>\n"
+        inputs = tokenizer(formatted_input, return_tensors="pt")
+
+        # Generate response
+        with torch.no_grad():
+            outputs = model.generate(
+                **inputs,
+                max_new_tokens=100,
+                temperature=0.7,
+                do_sample=True,
+                pad_token_id=tokenizer.eos_token_id,
+            )
+
+        # Decode and print response
+        response = tokenizer.decode(outputs[0], skip_special_tokens=True)
+        print(f"Model response:\n{response}")
+
+    def upload_to_hub(self, model_path, repo_name="marcus-tinyllama-finetuned"):
+        """Upload the fine-tuned model to Hugging Face Hub"""
+        from huggingface_hub import HfApi
+
+        full_repo_name = f"{self.hf_org}/{repo_name}"
+
+        try:
+            api = HfApi(token=self.hf_token)
+
+            # Create repository
+            api.create_repo(repo_id=full_repo_name, exist_ok=True, private=False)
+
+            # Upload model files
+            api.upload_folder(
+                folder_path=model_path, repo_id=full_repo_name, repo_type="model"
+            )
+
+            print(
+                f"Model uploaded successfully to: https://huggingface.co/{full_repo_name}"
+            )
+            return full_repo_name
+
+        except Exception as e:
+            print(f"Error uploading to hub: {e}")
+            return None
+
+
+def main():
+    """Main function to run the fine-tuning process"""
+    print("=== Simple LLM Fine-tuning Script ===")
+    print("Using TinyLlama-1.1B with LoRA for efficient training\n")
+
+    # Initialize fine-tuner
+    finetuner = SimpleFineTuner()
+
+    # Train the model
+    model_path = finetuner.train()
+
+    # Test the model
+    finetuner.test_model(model_path)
+
+    # Ask user if they want to upload to Hub
+    upload_choice = input(
+        "\nWould you like to upload the model to Hugging Face Hub? (y/n): "
+    )
+    if upload_choice.lower() == "y":
+        repo_name = input(
+            "Enter repository name (default: marcus-tinyllama-finetuned): "
+        ).strip()
+        if not repo_name:
+            repo_name = "marcus-tinyllama-finetuned"
+
+        finetuner.upload_to_hub(model_path, repo_name)
+
+    print("\nFine-tuning process completed!")
+
+
+if __name__ == "__main__":
+    main()
