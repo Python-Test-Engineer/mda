@@ -238,3 +238,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+    # tester = SimpleFineTuner()
+    # tester.test_model("./marcus-tinyllama-finetuned", "How do you define success?")
