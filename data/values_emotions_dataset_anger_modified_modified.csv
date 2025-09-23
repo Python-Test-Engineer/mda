@@ -1,0 +1,150 @@
+Text|RULE|Emotion
+Someone cuts in line at the grocery store|FAIRNESS|Irritation
+A colleague takes credit for your work|HONESTY|Anger
+Your neighbor plays loud music at 3 AM|RESPECT_FOR_OTHERS|Annoyance
+A friend breaks a promise to help you move|RELIABILITY|Irritation
+Someone litters in a pristine park|ENVIRONMENTAL_RESPONSIBILITY|Anger
+A person talks loudly on their phone in a library|CONSIDERATION_FOR_OTHERS|Annoyance
+Your boss assigns you extra work without notice|WORK-LIFE_BALANCE|Irritation
+A driver doesn't use turn signals|SAFETY|Annoyance
+Someone spreads false rumors about you|TRUTH|Rage
+A restaurant serves you the wrong order and refuses to fix it|CUSTOMER_SERVICE|Irritation
+A person doesn't hold the door when you're right behind them|COMMON_COURTESY|Annoyance
+Your roommate eats your labeled food from the fridge|RESPECT_FOR_PROPERTY|Irritation
+A politician breaks a campaign promise|INTEGRITY|Anger
+Someone parks in a handicapped spot without a permit|FAIRNESS|Anger
+A friend cancels plans at the last minute repeatedly|RELIABILITY|Irritation
+Your internet provider throttles your connection without notice|TRANSPARENCY|Annoyance
+A coworker interrupts you constantly in meetings|RESPECT|Irritation
+Someone doesn't clean up after their dog|CIVIC_RESPONSIBILITY|Annoyance
+A store clerk ignores you while helping other customers|EQUAL_TREATMENT|Irritation
+Your landlord raises rent without proper notice|FAIR_DEALING|Anger
+A person cuts you off in traffic|SAFETY|Rage
+Someone doesn't return borrowed money|TRUST|Anger
+A family member shares your private information|PRIVACY|Anger
+Your doctor keeps you waiting for hours without explanation|RESPECT_FOR_TIME|Irritation
+A friend doesn't invite you to a group gathering|INCLUSION|Irritation
+Someone takes the last parking spot you were waiting for|FAIRNESS|Annoyance
+A coworker doesn't do their share of team work|RESPONSIBILITY|Irritation
+Your phone company charges hidden fees|HONESTY_IN_BUSINESS|Anger
+A person doesn't pick up after their mess in a shared space|CLEANLINESS|Annoyance
+Someone doesn't thank you for holding the elevator|GRATITUDE|Annoyance
+A neighbor lets their property become an eyesore|COMMUNITY_STANDARDS|Irritation
+Your teacher shows favoritism to certain students|EQUAL_TREATMENT|Anger
+A person doesn't return your calls or texts|COMMUNICATION|Irritation
+Someone cuts down a healthy tree without permission|ENVIRONMENTAL_STEWARDSHIP|Anger
+A cashier is rude and dismissive|PROFESSIONAL_COURTESY|Irritation
+Your friend always arrives late to plans|PUNCTUALITY|Annoyance
+A person doesn't vote in important elections|CIVIC_DUTY|Irritation
+Someone doesn't wear a mask during a health crisis|PUBLIC_HEALTH_RESPONSIBILITY|Anger
+A coworker takes long personal calls during work time|WORK_ETHIC|Annoyance
+Your utility company shuts off service without warning|FAIR_NOTICE|Rage
+A person doesn't yield to pedestrians at crosswalks|SAFETY|Anger
+Someone doesn't tip service workers|FAIR_COMPENSATION|Irritation
+A friend gossips about mutual acquaintances|LOYALTY|Annoyance
+Your supervisor takes all the credit for team successes|RECOGNITION|Anger
+A person doesn't clean their dishes in the office kitchen|SHARED_RESPONSIBILITY|Annoyance
+Someone doesn't leash their aggressive dog in public|PUBLIC_SAFETY|Anger
+A store charges different prices to different customers|EQUAL_TREATMENT|Irritation
+Your mechanic recommends unnecessary repairs|HONESTY|Anger
+A person doesn't hold their place in line when stepping away|QUEUE_ETIQUETTE|Annoyance
+Someone doesn't acknowledge when they're wrong|HUMILITY|Irritation
+Your manager assigns you to maintain legacy PHP code without documentation|PROFESSIONAL_GROWTH|Irritation
+A client insists on using Internet Explorer 11 for their new website|MODERN_WEB_STANDARDS|Annoyance
+Your PM changes requirements mid-sprint without adjusting timeline|PROJECT_PLANNING_INTEGRITY|Anger
+A senior developer dismisses your code review feedback without discussion|OPEN_COMMUNICATION|Irritation
+The company mandates working weekends to meet unrealistic deadlines|WORK-LIFE_BALANCE|Rage
+A colleague copies your GitHub repository and claims it as their own|INTELLECTUAL_PROPERTY_RESPECT|Anger
+Your boss asks you to implement dark patterns to trick users|ETHICAL_DESIGN|Anger
+The client wants to skip user testing to save money|USER-CENTERED_DESIGN|Irritation
+A teammate commits directly to main branch breaking the build|VERSION_CONTROL_DISCIPLINE|Irritation
+Your company refuses to upgrade from outdated development tools|TECHNICAL_ADVANCEMENT|Annoyance
+A designer provides mockups that are technically impossible to implement|FEASIBILITY_CONSIDERATION|Irritation
+The marketing team promises features that don't exist yet|HONEST_COMMUNICATION|Anger
+Your manager interrupts your deep work time with non-urgent meetings|PRODUCTIVITY_RESPECT|Annoyance
+A client refuses to pay for additional scope they requested|FAIR_COMPENSATION|Anger
+The company blocks access to Stack Overflow and developer resources|LEARNING_AND_DEVELOPMENT|Rage
+A coworker takes credit for fixing a bug you actually solved|RECOGNITION|Anger
+Your PM schedules deployment on Friday afternoon before holiday weekend|RISK_MANAGEMENT|Irritation
+The client wants their site to look exactly like Apple's website|CREATIVE_INTEGRITY|Annoyance
+A senior dev refuses to document their complex legacy code before leaving|KNOWLEDGE_SHARING|Irritation
+Your company uses pirated software for development|LEGAL_COMPLIANCE|Anger
+The QA team approves obviously broken features to meet deadlines|QUALITY_STANDARDS|Irritation
+A client demands admin access to production servers|SECURITY_BEST_PRACTICES|Anger
+Your manager assigns you to projects outside your expertise without training|PROFESSIONAL_DEVELOPMENT|Irritation
+The company forces developers to work on personal devices|PROFESSIONAL_BOUNDARIES|Annoyance
+A teammate doesn't write unit tests despite team agreements|CODE_QUALITY|Irritation
+Your boss promises you'll learn new technologies but only assigns maintenance work|CAREER_GROWTH|Irritation
+The client wants to launch without SSL certificates to save money|SECURITY_STANDARDS|Anger
+A coworker constantly pushes untested code causing production issues|PROFESSIONAL_RESPONSIBILITY|Anger
+Your company refuses to provide adequate development hardware|PROPER_TOOLS|Annoyance
+The PM estimates tasks without consulting developers|TECHNICAL_INPUT_VALUE|Irritation
+A client insists their website needs to work on browsers from 2005|REASONABLE_REQUIREMENTS|Annoyance
+Your manager micromanages your coding style instead of focusing on results|AUTONOMY|Irritation
+The company has no staging environment and tests directly in production|DEVELOPMENT_BEST_PRACTICES|Rage
+A fellow developer doesn't follow agreed-upon coding standards|TEAM_CONSISTENCY|Annoyance
+Your client wants you to build features that violate accessibility guidelines|INCLUSIVE_DESIGN|Anger
+The company expects 24/7 availability without on-call compensation|FAIR_WORK_CONDITIONS|Anger
+A coworker hoards knowledge and refuses to share technical solutions|COLLABORATION|Irritation
+Your boss assigns impossible deadlines then blames developers for delays|REALISTIC_PLANNING|Rage
+The client wants to store passwords in plain text to save database space|DATA_SECURITY|Anger
+Your company uses your personal GitHub account for client projects|PROFESSIONAL_BOUNDARIES|Irritation
+A PM promises clients features during sales calls without technical consultation|DEVELOPMENT_INVOLVEMENT|Anger
+The company refuses to implement proper backup systems|DATA_PROTECTION|Anger
+A senior developer gatekeeps code reviews with personal preferences|OBJECTIVE_FEEDBACK|Irritation
+Your manager interrupts vacation time with urgent bug fix requests|TIME_OFF_RESPECT|Rage
+The client wants to skip browser testing on mobile devices|CROSS-PLATFORM_COMPATIBILITY|Annoyance
+Your company expects you to support legacy Internet Explorer without extra time|REALISTIC_SCOPE|Irritation
+A teammate doesn't participate in code reviews but expects others to review theirs|RECIPROCITY|Annoyance
+The PM schedules sprint planning during your focused coding hours|TIME_MANAGEMENT|Irritation
+Your client refuses to provide content then blames delays on development|SHARED_RESPONSIBILITY|Anger
+The company mandates using specific tools that slow down development|EFFICIENCY|Annoyance
+Your friend constantly interrupts you when you're speaking|ACTIVE_LISTENING|Annoyance
+A family member criticizes your life choices at every gathering|PERSONAL_AUTONOMY|Irritation
+Your partner leaves dirty dishes in the sink for days|SHARED_RESPONSIBILITY|Annoyance
+A friend always one-ups your stories with their own|HUMILITY|Irritation
+Your roommate brings friends over without asking|CONSIDERATION|Annoyance
+Someone constantly checks their phone while you're talking|PRESENT_MOMENT_ATTENTION|Irritation
+A relative makes passive-aggressive comments about your appearance|BODY_POSITIVITY|Irritation
+Your friend cancels plans to hang out with someone more popular|LOYALTY|Anger
+A coworker always complains but never offers solutions|CONSTRUCTIVE_COMMUNICATION|Annoyance
+Your partner dismisses your feelings as overreacting|EMOTIONAL_VALIDATION|Anger
+A friend borrows your car and returns it with an empty gas tank|RECIPROCITY|Irritation
+Someone gives you unsolicited advice about your personal life|BOUNDARY_RESPECT|Annoyance
+Your sibling always changes the TV channel without asking|SHARED_DECISION_MAKING|Irritation
+A friend makes jokes at your expense in front of others|RESPECT|Anger
+Your neighbor asks to borrow tools but never returns them|TRUST|Irritation
+Someone constantly name-drops famous people they claim to know|AUTHENTICITY|Annoyance
+Your partner spends money from joint accounts without discussion|FINANCIAL_TRANSPARENCY|Anger
+A friend always shows up empty-handed to potluck dinners|FAIR_CONTRIBUTION|Irritation
+Your roommate uses your expensive toiletries without asking|PERSONAL_PROPERTY_RESPECT|Annoyance
+Someone always steers conversations back to themselves|MUTUAL_INTEREST|Irritation
+Your family member shares embarrassing childhood stories publicly|PRIVACY|Anger
+A friend guilt trips you when you can't do favors for them|EMOTIONAL_MANIPULATION_RESISTANCE|Anger
+Your partner criticizes your friends behind their backs|LOYALTY|Irritation
+Someone always arrives late and makes everyone else wait|TIME_RESPECT|Annoyance
+A coworker takes personal calls during team meetings|PROFESSIONAL_COURTESY|Irritation
+Your friend never initiates contact but expects you to reach out|RECIPROCAL_EFFORT|Irritation
+Someone constantly corrects your grammar in casual conversation|SOCIAL_GRACE|Annoyance
+Your partner makes major decisions without consulting you|PARTNERSHIP_EQUALITY|Rage
+A friend only contacts you when they need something|GENUINE_FRIENDSHIP|Anger
+Your roommate never cleans common areas despite agreements|SHARED_LIVING_RESPECT|Irritation
+Someone always has to have the last word in arguments|GRACEFUL_DISAGREEMENT|Annoyance
+Your family member compares you unfavorably to other relatives|UNCONDITIONAL_ACCEPTANCE|Anger
+A friend reveals secrets you told them in confidence|TRUST|Rage
+Your partner flirts with others in front of you|RELATIONSHIP_COMMITMENT|Rage
+Someone constantly interrupts your work with trivial questions|PRODUCTIVITY_RESPECT|Irritation
+A friend makes plans with you then invites others without asking|COMMUNICATION|Annoyance
+Your sibling always takes the credit for family gift contributions|HONESTY|Irritation
+Someone always insists on splitting bills unequally in their favor|FAIRNESS|Anger
+Your roommate brings romantic partners over without notice|LIVING_SPACE_RESPECT|Annoyance
+A friend always chooses restaurants you dislike for group dinners|CONSIDERATION_FOR_PREFERENCES|Irritation
+Your partner rolls their eyes when you express excitement about hobbies|INTEREST_VALIDATION|Anger
+Someone constantly brags about their wealth and possessions|MODESTY|Annoyance
+A family member always dominates holiday conversations|INCLUSIVE_DIALOGUE|Irritation
+Your friend takes photos of you without permission and posts them|CONSENT|Anger
+Someone always insists their problems are worse than yours|EMPATHY_BALANCE|Irritation
+Your partner refuses to acknowledge when they hurt your feelings|ACCOUNTABILITY|Rage
+A coworker always takes credit for group brainstorming ideas|COLLABORATIVE_RECOGNITION|Anger
+Your roommate leaves messes expecting others to clean up|PERSONAL_RESPONSIBILITY|Irritation
+Someone constantly makes backhanded compliments|GENUINE_KINDNESS|Annoyance

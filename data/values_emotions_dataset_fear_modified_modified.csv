@@ -1,0 +1,151 @@
+Text|RULE|Emotion
+Someone cuts in line at the grocery store|FAIRNESS|Trepidation
+A colleague takes credit for your work|HONESTY|Anxiety
+Your neighbor plays loud music at 3 AM|RESPECT_FOR_OTHERS|Uncertainty
+A friend breaks a promise to help you move|RELIABILITY|Anxiety
+Someone litters in a pristine park|ENVIRONMENTAL_RESPONSIBILITY|Fear
+Your doctor calls and asks you to come in to discuss test results|HEALTH_SECURITY|Fear
+A friend stops responding to your texts suddenly|COMMUNICATION_CONSISTENCY|Anxiety
+Your boss asks to meet privately without explaining why|JOB_SECURITY|Fear
+Walking alone in an unfamiliar neighborhood at night|PERSONAL_SAFETY|Fear
+Your bank account balance is lower than expected|FINANCIAL_SECURITY|Anxiety
+A strange noise comes from your car engine|TRANSPORTATION_RELIABILITY|Uncertainty
+You receive an urgent call from your child's school|FAMILY_SAFETY|Fear
+Your landlord mentions possible rent increases|HOUSING_STABILITY|Anxiety
+Dark clouds gather during your outdoor wedding|EVENT_SUCCESS|Trepidation
+You smell gas when entering your home|SAFETY|Fear
+Your computer crashes with unsaved important work|DATA_SECURITY|Anxiety
+A police car starts following you while driving|LEGAL_TROUBLE|Trepidation
+Your partner seems distant and won't talk about it|RELATIONSHIP_STABILITY|Uncertainty
+You find a lump during a self-examination|HEALTH|Fear
+Your manager schedules unexpected performance reviews for the team|JOB_PERFORMANCE|Anxiety
+The pilot announces turbulence ahead during flight|TRAVEL_SAFETY|Trepidation
+You realize you forgot to lock your front door|HOME_SECURITY|Uncertainty
+Your elderly parent doesn't answer repeated phone calls|FAMILY_WELLBEING|Fear
+A suspicious person follows you in a parking garage|PERSONAL_SAFETY|Fear
+You receive a certified letter from an unknown law firm|LEGAL_ISSUES|Anxiety
+Your child is late coming home past curfew|FAMILY_SAFETY|Fear
+Strange charges appear on your credit card statement|FINANCIAL_SECURITY|Anxiety
+You hear breaking glass in your house at 2 AM|HOME_INVASION|Fear
+Your boss mentions upcoming budget cuts|JOB_SECURITY|Trepidation
+A weird mole appears on your skin|HEALTH_CONCERNS|Uncertainty
+You lose cell phone signal during an emergency|COMMUNICATION_ACCESS|Anxiety
+Your car won't start before an important interview|RELIABILITY|Trepidation
+A tornado warning is issued for your area|NATURAL_DISASTER_SAFETY|Fear
+You find your front door unlocked when you return home|SECURITY_BREACH|Fear
+Your internet goes down during a crucial work deadline|PROFESSIONAL_RELIABILITY|Anxiety
+A loved one texts they need to talk about something serious|RELATIONSHIP_ISSUES|Uncertainty
+You smell smoke but can't identify the source|FIRE_SAFETY|Fear
+Your credit card is declined at a restaurant|FINANCIAL_EMBARRASSMENT|Anxiety
+Walking through a deserted subway station late at night|PERSONAL_SAFETY|Fear
+Your supervisor mentions restructuring the department|JOB_STABILITY|Trepidation
+A family member calls crying but the call cuts out|EMERGENCY_SITUATION|Fear
+You notice your house key is missing from your keyring|HOME_SECURITY|Uncertainty
+Your child's teacher requests an urgent parent conference|ACADEMIC/BEHAVIORAL_ISSUES|Anxiety
+You feel chest pain and shortness of breath|HEALTH_EMERGENCY|Fear
+Your partner suggests taking a break from the relationship|RELATIONSHIP_SECURITY|Anxiety
+A severe weather warning interrupts your TV program|NATURAL_DISASTER|Trepidation
+You discover your social security number in a data breach|IDENTITY_THEFT|Anxiety
+Your teenager doesn't come home all night|PARENTAL_RESPONSIBILITY|Fear
+You hear footsteps upstairs when you're home alone|INTRUDER|Fear
+Your manager assigns you to present to senior executives|PROFESSIONAL_COMPETENCE|Trepidation
+A medical bill arrives that's much higher than expected|FINANCIAL_BURDEN|Uncertainty
+Your manager assigns you to maintain legacy PHP code without documentation|TECHNICAL_COMPETENCE|Uncertainty
+A client insists on using Internet Explorer 11 for their new website|PROFESSIONAL_STANDARDS|Trepidation
+Your PM changes requirements mid-sprint without adjusting timeline|PROJECT_FAILURE|Anxiety
+A senior developer dismisses your code review feedback without discussion|PROFESSIONAL_RESPECT|Uncertainty
+The company mandates working weekends to meet unrealistic deadlines|WORK-LIFE_BALANCE|Fear
+A colleague might have copied your code and claimed it as their own|INTELLECTUAL_PROPERTY|Anxiety
+Your boss asks you to implement features that seem ethically questionable|PROFESSIONAL_INTEGRITY|Trepidation
+The client wants to skip user testing to save money|PRODUCT_QUALITY|Uncertainty
+A teammate commits directly to main branch potentially breaking the build|SYSTEM_STABILITY|Anxiety
+Your company refuses to upgrade from outdated development tools|CAREER_STAGNATION|Fear
+A designer provides mockups that seem technically impossible to implement|PROFESSIONAL_CAPABILITY|Trepidation
+The marketing team promises features that don't exist yet|CREDIBILITY|Anxiety
+Your manager schedules meetings during your most productive hours|PERFORMANCE_IMPACT|Uncertainty
+A client refuses to pay for additional scope they requested|FINANCIAL_STABILITY|Fear
+The company blocks access to Stack Overflow and developer resources|LEARNING_ABILITY|Anxiety
+A coworker might take credit for fixing a bug you solved|RECOGNITION|Trepidation
+Your PM schedules deployment on Friday afternoon before a holiday|SYSTEM_RELIABILITY|Uncertainty
+The client wants their site to look exactly like a major company's website|LEGAL_ISSUES|Anxiety
+A senior dev is leaving without documenting their complex legacy code|KNOWLEDGE_GAP|Fear
+Your company might be using unlicensed software for development|LEGAL_COMPLIANCE|Trepidation
+The QA team approves obviously broken features to meet deadlines|PRODUCT_REPUTATION|Anxiety
+A client demands admin access to production servers|SECURITY_BREACH|Fear
+Your manager assigns you to projects outside your expertise without training|FAILURE|Uncertainty
+The company expects developers to work on personal devices|SECURITY_RISK|Anxiety
+A teammate doesn't write unit tests despite agreements|CODE_RELIABILITY|Trepidation
+Your boss promises learning opportunities but only assigns maintenance work|CAREER_GROWTH|Fear
+The client wants to launch without SSL certificates to save money|SECURITY_VULNERABILITY|Anxiety
+A coworker constantly pushes untested code to production|SYSTEM_CRASHES|Uncertainty
+Your company refuses to provide adequate development hardware|PRODUCTIVITY_LOSS|Trepidation
+The PM estimates tasks without consulting developers|UNREALISTIC_EXPECTATIONS|Anxiety
+A client insists their website works on ancient browsers|TECHNICAL_FEASIBILITY|Fear
+Your manager micromanages your coding style obsessively|CREATIVE_FREEDOM|Uncertainty
+The company has no staging environment and tests in production|CATASTROPHIC_FAILURE|Fear
+A fellow developer doesn't follow coding standards|CODE_MAINTAINABILITY|Trepidation
+Your client wants features that violate accessibility guidelines|LEGAL_COMPLIANCE|Anxiety
+The company expects 24/7 availability without compensation|BURNOUT|Fear
+A coworker hoards knowledge and refuses to share solutions|PROJECT_FAILURE|Uncertainty
+Your boss sets impossible deadlines then blames developers for delays|WORKPLACE_TOXICITY|Anxiety
+The client wants to store passwords in plain text|SECURITY_DISASTER|Fear
+Your company uses your personal accounts for client projects|PROFESSIONAL_LIABILITY|Trepidation
+A PM promises features during sales without technical consultation|IMPOSSIBLE_COMMITMENTS|Anxiety
+The company refuses to implement proper backup systems|DATA_LOSS|Fear
+A senior developer gatekeeps code reviews with arbitrary preferences|CODE_QUALITY_STANDARDS|Uncertainty
+Your manager contacts you during vacation for urgent fixes|WORK-LIFE_BOUNDARIES|Anxiety
+The client wants to skip mobile testing to save time|USER_EXPERIENCE_FAILURE|Trepidation
+Your company expects IE support without extra development time|TECHNICAL_DEBT|Fear
+A teammate doesn't do code reviews but expects others to review theirs|CODE_QUALITY|Uncertainty
+The PM schedules planning during your focused coding time|PRODUCTIVITY_DISRUPTION|Trepidation
+Your client refuses to provide content then blames development delays|PROJECT_TIMELINE|Anxiety
+The company mandates using tools that significantly slow development|EFFICIENCY_LOSS|Fear
+Your friend constantly interrupts you when speaking|COMMUNICATION_BREAKDOWN|Uncertainty
+A family member criticizes your life choices at gatherings|SELF-WORTH_VALIDATION|Anxiety
+Your partner leaves responsibilities undone for days|RELATIONSHIP_STABILITY|Trepidation
+A friend always one-ups your stories|FRIENDSHIP_AUTHENTICITY|Uncertainty
+Your roommate brings people over without asking|LIVING_SITUATION_CONTROL|Anxiety
+Someone constantly checks their phone while you talk|CONNECTION_VALUE|Trepidation
+A relative makes comments about your appearance|SELF-IMAGE|Fear
+Your friend cancels plans for someone more popular|SOCIAL_STATUS|Anxiety
+A coworker always complains but offers no solutions|WORK_ENVIRONMENT_TOXICITY|Uncertainty
+Your partner dismisses your feelings as overreacting|EMOTIONAL_SAFETY|Fear
+A friend borrows items and returns them damaged|TRUST_BOUNDARIES|Trepidation
+Someone gives unsolicited advice about your personal life|PERSONAL_AUTONOMY|Anxiety
+Your sibling changes shared decisions without consultation|FAMILY_DYNAMICS|Uncertainty
+A friend makes jokes at your expense publicly|SOCIAL_EMBARRASSMENT|Fear
+Your neighbor borrows things but never returns them|BOUNDARY_VIOLATIONS|Trepidation
+Someone constantly name-drops to impress others|SOCIAL_AUTHENTICITY|Anxiety
+Your partner makes financial decisions without discussion|FINANCIAL_SECURITY|Fear
+A friend never contributes equally to group activities|SOCIAL_FAIRNESS|Uncertainty
+Your roommate uses your personal items without asking|PERSONAL_BOUNDARIES|Trepidation
+Someone always steers conversations to themselves|SOCIAL_CONNECTION|Anxiety
+Your family member shares private information publicly|PRIVACY_VIOLATION|Fear
+A friend guilt trips you when you can't help them|EMOTIONAL_MANIPULATION|Uncertainty
+Your partner criticizes your friends behind their backs|LOYALTY_CONFLICTS|Trepidation
+Someone always arrives late making others wait|SOCIAL_RELIABILITY|Anxiety
+A coworker takes personal calls during important meetings|PROFESSIONAL_RESPECT|Fear
+Your friend never initiates contact but expects your effort|FRIENDSHIP_IMBALANCE|Uncertainty
+Someone constantly corrects your casual speech|SOCIAL_ACCEPTANCE|Trepidation
+Your partner makes major decisions without including you|RELATIONSHIP_EQUALITY|Fear
+A friend only contacts you when they need something|FRIENDSHIP_EXPLOITATION|Anxiety
+Your roommate never cleans despite living agreements|LIVING_HARMONY|Uncertainty
+Someone always needs to have the last word|CONFLICT_RESOLUTION|Trepidation
+Your family member compares you unfavorably to others|SELF-WORTH|Fear
+A friend reveals secrets you shared in confidence|TRUST_BETRAYAL|Anxiety
+Your partner shows romantic interest in others publicly|RELATIONSHIP_SECURITY|Fear
+Someone constantly interrupts your work with trivial questions|PRODUCTIVITY_PROTECTION|Uncertainty
+A friend invites others to your plans without asking|SOCIAL_CONTROL|Trepidation
+Your sibling takes credit for joint contributions|FAMILY_RECOGNITION|Anxiety
+Someone always manipulates bill splitting in their favor|FINANCIAL_FAIRNESS|Fear
+Your roommate brings romantic partners without notice|LIVING_SPACE_COMFORT|Uncertainty
+A friend always chooses activities you dislike for the group|SOCIAL_INCLUSION|Trepidation
+Your partner dismisses your interests and hobbies|PERSONAL_VALIDATION|Anxiety
+Someone constantly brags about their wealth|SOCIAL_INADEQUACY|Fear
+A family member dominates all conversations|VOICE_AND_PARTICIPATION|Uncertainty
+Your friend takes and posts photos of you without permission|PRIVACY_CONTROL|Trepidation
+Someone always claims their problems are worse than yours|EMOTIONAL_SUPPORT|Anxiety
+Your partner refuses to acknowledge hurting your feelings|EMOTIONAL_SAFETY|Fear
+A coworker takes credit for collaborative ideas|PROFESSIONAL_RECOGNITION|Uncertainty
+Your roommate expects others to clean their messes|LIVING_RESPONSIBILITY|Trepidation
+Someone constantly makes backhanded compliments|GENUINE_ACCEPTANCE|Anxiety
