@@ -10,6 +10,7 @@ dependencies = [
     "pandas>=2.3.2",
     "peft>=0.17.1",
     "python-dotenv>=1.1.1",
+    "scikit-learn>=1.7.2",
     "transformers>=4.56.2",
     "trl>=0.23.0",
 ]
