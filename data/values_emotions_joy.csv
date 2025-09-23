@@ -1,0 +1,134 @@
+output,input,instruction
+Joy,KINDNESS,A stranger helps you carry heavy groceries to your car
+Happiness,RECOGNITION,Your colleague openly credits your contribution in a team meeting
+Contentedness,COMMUNITY_SHARING,Your neighbor brings you fresh vegetables from their garden
+Tranquility,RELIABILITY,A friend keeps their promise to help you move despite bad weather
+Contentedness,ENVIRONMENTAL_CARE,Someone picks up litter in a park without being asked
+Joy,HEALTH_SECURITY,Your doctor calls with excellent test results
+Happiness,COMMUNICATION_CARE,A friend sends you a thoughtful text just to check in
+Excitement,PROFESSIONAL_RECOGNITION,Your boss praises your work in front of the entire team
+Tranquility,PERSONAL_SAFETY,Walking through a peaceful neighborhood on a sunny morning
+Joy,FINANCIAL_SURPRISE,You find unexpected money in an old jacket pocket
+Contentedness,TRANSPORTATION_RELIABILITY,Your car starts perfectly on a cold winter morning
+Happiness,FAMILY_PRIDE,Your child's teacher calls to share their academic achievements
+Tranquility,HOUSING_STABILITY,Your landlord tells you there will be no rent increase this year
+Joy,EVENT_SUCCESS,Clear skies appear on your outdoor wedding day
+Contentedness,HOME_COMFORT,You smell fresh bread baking when you enter your home
+Tranquility,DATA_SECURITY,Your computer backup saves all your important work perfectly
+Happiness,HELPFUL_AUTHORITY,A police officer helps you with directions when you're lost
+Joy,RELATIONSHIP_CARE,Your partner surprises you with your favorite meal after a long day
+Tranquility,HEALTH_WELLNESS,Your annual health checkup shows perfect results
+Excitement,JOB_APPRECIATION,Your manager announces everyone gets a performance bonus
+Contentedness,TRAVEL_COMFORT,The pilot announces smooth flying conditions for your trip
+Tranquility,HOME_SECURITY,You remember you locked your front door before leaving
+Happiness,FAMILY_CONNECTION,Your elderly parent calls to share good news about their day
+Contentedness,PERSONAL_PROTECTION,A security guard walks you safely to your car late at night
+Excitement,EDUCATIONAL_OPPORTUNITY,You receive a letter confirming a scholarship award
+Joy,FAMILY_SAFETY,Your child arrives home early with good news to share
+Happiness,FINANCIAL_ACHIEVEMENT,Your bank statement shows your savings goal has been reached
+Tranquility,PEACEFUL_ENVIRONMENT,You hear your favorite song playing in a quiet coffee shop
+Contentedness,JOB_SECURITY,Your boss announces the company exceeded profit targets
+Tranquility,HEALTH_RELIEF,A dermatologist confirms that concerning mole is completely benign
+Contentedness,COMMUNICATION_RELIABILITY,Your phone has full signal during an important call
+Happiness,RELIABILITY,Your car starts immediately before an important interview
+Joy,NATURAL_COOPERATION,Weather forecast shows perfect conditions for your outdoor event
+Tranquility,SECURITY_COMFORT,You find your house secure and welcoming when returning home
+Contentedness,PROFESSIONAL_SUPPORT,Your internet connection works flawlessly during a crucial deadline
+Happiness,RELATIONSHIP_JOY,A loved one shares wonderful news about their life
+Joy,HOME_WARMTH,You smell cookies baking and know someone is making your favorite
+Contentedness,FINANCIAL_EASE,Your credit card processes smoothly for a special purchase
+Tranquility,COMMUNITY_SAFETY,"Walking through a well-lit, friendly neighborhood at night"
+Excitement,CAREER_GROWTH,Your supervisor announces a promotion opportunity for your team
+Joy,POSITIVE_CONNECTION,A family member calls with exciting news to celebrate
+Contentedness,PERSONAL_ORGANIZATION,You find your house key exactly where you left it
+Happiness,PARENTAL_SUCCESS,Your child's teacher sends home glowing progress reports
+Joy,PHYSICAL_WELLNESS,You feel energetic and healthy during your morning run
+Tranquility,LOVE_SECURITY,Your partner expresses deep appreciation for your relationship
+Contentedness,NATURAL_RELIEF,A weather alert cancels just as conditions improve
+Tranquility,IDENTITY_SAFETY,You discover your personal information was protected in a security update
+Happiness,FAMILY_OPENNESS,Your teenager comes home early with friends to introduce
+Tranquility,NATURAL_HARMONY,You hear birds singing outside your bedroom window at dawn
+Excitement,PROFESSIONAL_GROWTH,Your manager invites you to lead an exciting new project
+Contentedness,FINANCIAL_RELIEF,A medical bill is much lower than expected due to good insurance
+Happiness,TECHNICAL_VALIDATION,Your code review receives enthusiastic approval from senior developers
+Joy,PROFESSIONAL_STANDARDS,"A client compliments your modern, accessible website design"
+Tranquility,PROJECT_BALANCE,Your PM provides realistic timelines with buffer for quality work
+Contentedness,PROFESSIONAL_RESPECT,A senior developer takes time to thoughtfully explain their feedback
+Happiness,WORK-LIFE_HARMONY,The company introduces flexible work arrangements for better balance
+Contentedness,INTELLECTUAL_HONESTY,A colleague shares credit appropriately for collaborative code
+Tranquility,PROFESSIONAL_INTEGRITY,Your boss asks you to implement features that align with your values
+Joy,PRODUCT_QUALITY_FOCUS,The client enthusiastically approves thorough user testing plans
+Tranquility,SYSTEM_STABILITY,A teammate follows proper version control preventing any issues
+Excitement,CAREER_ADVANCEMENT,Your company upgrades to cutting-edge development tools
+Happiness,PROFESSIONAL_PARTNERSHIP,A designer collaborates closely to create technically feasible mockups
+Contentedness,TEAM_RESPECT,The marketing team consults developers before making technical promises
+Tranquility,PRODUCTIVITY_SUPPORT,Your manager protects your deep work time from unnecessary interruptions
+Joy,FAIR_COMPENSATION,A client happily pays for well-documented additional scope
+Excitement,GROWTH_OPPORTUNITY,The company provides unlimited access to learning resources
+Happiness,RECOGNITION_FAIRNESS,A coworker publicly acknowledges your contribution to fixing a critical bug
+Contentedness,SYSTEM_CARE,Your PM schedules deployment during optimal low-traffic hours
+Joy,CREATIVE_FREEDOM,"The client appreciates your creative, original website design approach"
+Tranquility,KNOWLEDGE_SHARING,A departing senior dev thoroughly documents their complex legacy systems
+Contentedness,LEGAL_COMPLIANCE,Your company invests in proper licensing for all development software
+Happiness,QUALITY_BALANCE,The QA team maintains high standards while supporting realistic timelines
+Joy,PROFESSIONAL_TRUST,A client trusts your security expertise and implements proper access controls
+Excitement,CAREER_ALIGNMENT,Your manager assigns projects that perfectly match your growing expertise
+Happiness,TOOL_SUPPORT,The company provides top-tier development hardware for optimal productivity
+Tranquility,TEAM_PARTNERSHIP,"The PM collaborates with developers to create realistic, achievable estimates"
+Joy,TECHNICAL_PROGRESS,A client chooses modern browser support allowing cutting-edge development
+Contentedness,CREATIVE_AUTONOMY,Your manager appreciates your coding style while focusing on results
+Tranquility,DEVELOPMENT_SAFETY,The company maintains separate staging environments for safe testing
+Contentedness,TEAM_HARMONY,"A fellow developer contributes to consistent, well-documented coding standards"
+Happiness,INCLUSIVE_VALUES,Your client enthusiastically supports accessibility-first design principles
+Tranquility,WORK-LIFE_RESPECT,The company offers reasonable on-call rotation with fair compensation
+Joy,TEAM_GENEROSITY,A coworker freely shares knowledge and collaborative problem-solving approaches
+Happiness,LEADERSHIP_SUPPORT,Your boss sets achievable deadlines and celebrates development team successes
+Contentedness,SHARED_VALUES,The client prioritizes security best practices from the project start
+Tranquility,PRIVACY_RESPECT,Your company respects professional boundaries between personal and work accounts
+Happiness,PROFESSIONAL_CONSULTATION,A PM seeks technical input before making client commitments
+Tranquility,DATA_PROTECTION,The company invests in comprehensive backup systems and disaster recovery
+Contentedness,GROWTH_SUPPORT,"A senior developer provides constructive, helpful code review feedback"
+Joy,TIME_BOUNDARIES,Your manager protects your vacation time from any work interruptions
+Happiness,QUALITY_COMMITMENT,The client enthusiastically supports comprehensive cross-platform testing
+Contentedness,REALISTIC_EXPECTATIONS,Your company provides reasonable timelines for proper legacy browser support
+Tranquility,MUTUAL_RESPECT,"A teammate actively participates in thoughtful, reciprocal code reviews"
+Contentedness,WORKFLOW_RESPECT,The PM schedules meetings to complement rather than interrupt development flow
+Happiness,PROJECT_COLLABORATION,Your client provides all necessary content ahead of scheduled deadlines
+Joy,EFFICIENCY_SUPPORT,The company selects development tools that enhance rather than hinder productivity
+Happiness,ACTIVE_ENGAGEMENT,Your friend listens attentively and responds thoughtfully to your stories
+Joy,ACCEPTANCE,A family member celebrates and supports your life choices at gatherings
+Tranquility,PARTNERSHIP_EQUALITY,Your partner consistently shares household responsibilities without being asked
+Contentedness,GENEROUS_FRIENDSHIP,A friend celebrates your achievements without comparing to their own
+Happiness,CONSIDERATE_LIVING,Your roommate asks permission before inviting guests and considers your schedule
+Joy,PRESENCE_GIFT,Someone puts away their phone to give you full attention during conversations
+Happiness,FAMILY_SUPPORT,"A relative gives genuine, thoughtful compliments about your personal growth"
+Tranquility,LOYALTY,Your friend keeps plans even when other attractive options arise
+Contentedness,CONSTRUCTIVE_COLLABORATION,A coworker contributes solutions along with identifying workplace challenges
+Joy,EMOTIONAL_SAFETY,Your partner validates your feelings and works together on relationship issues
+Happiness,RESPECTFUL_CARE,A friend returns borrowed items in better condition than when borrowed
+Tranquility,BOUNDARY_RESPECT,Someone offers helpful advice only when asked and respects your autonomy
+Contentedness,FAMILY_INCLUSION,Your sibling includes you in decisions affecting shared family matters
+Joy,SUPPORTIVE_FRIENDSHIP,A friend celebrates your successes without making jokes at your expense
+Happiness,GRACIOUS_RECIPROCITY,Your neighbor returns borrowed tools promptly with a thank-you note
+Tranquility,BALANCED_CONVERSATION,Someone shares interesting stories while also asking about your experiences
+Contentedness,RELATIONSHIP_SUPPORT,Your partner openly appreciates your friends and speaks positively about them
+Tranquility,TRUST_RESPECT,A family member keeps private information confidential as requested
+Happiness,HONEST_COMMUNICATION,A friend expresses needs directly without guilt or manipulation
+Contentedness,TIME_CONSIDERATION,Someone arrives punctually for plans showing respect for everyone's time
+Tranquility,PROFESSIONAL_COURTESY,A coworker saves personal calls for breaks and stays engaged during meetings
+Joy,RECIPROCAL_EFFORT,Your friend initiates contact regularly showing mutual investment in the friendship
+Happiness,SOCIAL_GRACE,Someone engages in conversations without constantly correcting minor details
+Joy,PARTNERSHIP_RESPECT,Your partner includes you in major decisions that affect your shared life
+Tranquility,GENUINE_CARE,A friend reaches out offering support without expecting anything in return
+Contentedness,COOPERATIVE_LIVING,Your roommate maintains shared spaces according to agreed-upon standards
+Happiness,MATURE_DISCOURSE,Someone gracefully agrees to disagree during discussions without needing to win
+Joy,PERSONAL_RECOGNITION,Your family member acknowledges your individual strengths without unfair comparisons
+Tranquility,TRUSTWORTHY_FRIENDSHIP,A friend keeps your shared secrets safe and never breaches your confidence
+Happiness,PERSONAL_VALIDATION,Your partner shows genuine interest and enthusiasm for your hobbies
+Contentedness,HUMBLE_JOY,Someone shares their good fortune without excessive boasting
+Tranquility,INCLUSIVE_DIALOGUE,A family member ensures everyone gets equal time to contribute to conversations
+Happiness,CONSENT_RESPECT,Your friend asks permission before taking photos and respects your privacy preferences
+Joy,EMPATHETIC_UNDERSTANDING,Someone acknowledges that everyone faces different challenges without comparing hardships
+Contentedness,TEAM_GENEROSITY,A coworker shares recognition for collaborative brainstorming and group achievements
+Tranquility,PERSONAL_ACCOUNTABILITY,Your roommate takes responsibility for their own messes and maintains shared spaces
+Joy,GENUINE_APPRECIATION,"Someone offers sincere, thoughtful compliments that celebrate your authentic self"

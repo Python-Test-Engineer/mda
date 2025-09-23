@@ -1,4 +1,4 @@
-Text|RULE|Emotion
+output|input|instruction
 Someone cuts in line at the grocery store|FAIRNESS|Trepidation
 A colleague takes credit for your work|HONESTY|Anxiety
 Your neighbor plays loud music at 3 AM|RESPECT_FOR_OTHERS|Uncertainty
